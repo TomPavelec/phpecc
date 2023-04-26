@@ -45,6 +45,21 @@ class NumberTheory
     private $adapter;
 
     /**
+     * @var resource|GMP
+     */
+    private $zero;
+
+    /**
+     * @var resource|GMP
+     */
+    private $one;
+
+    /**
+     * @var resource|GMP
+     */
+    private $two;
+
+    /**
      * @param GmpMathInterface $adapter
      */
     public function __construct(GmpMathInterface $adapter)
